@@ -140,7 +140,7 @@ li button:focus {
 }
 .btn-remove:hover,
 li button:hover {
-    backgorund-color: var(--color-remove-light);
+    background-color: var(--color-remove-light);
 }
 
 /* Additional Styles */
