@@ -143,7 +143,9 @@ li button:hover {
     background-color: var(--color-remove-light);
 }
 
-
+#checkbox {
+    display: block;
+}
 .toggler {
     display: block;
     width: 60px;
