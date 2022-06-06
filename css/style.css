@@ -87,7 +87,7 @@ button:focus {
     white-space: nowrap;
     width: 1px;
 }
-input {
+.input-main {
     font-size: 1.15em;
     width: 75%;
     padding: 0.5em 1em;
