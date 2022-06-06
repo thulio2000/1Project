@@ -1,6 +1,8 @@
 
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
     --color-main: #45529d;
     --color-hide: #8188ae;
@@ -13,6 +15,8 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
