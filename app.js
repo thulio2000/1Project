@@ -5,16 +5,6 @@ const btnCreate = document.querySelector('.btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 const btnRemove = document.querySelector('.btn.remove');
 
-
-// Checked symbol uppon clicking on item
-
-let list = document.querySelector('ul');
-list.addEventListener ('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-    }
-}, false)
-
 // Function to add new Task
 
 btnCreate.addEventListener('click', () => {
@@ -50,6 +40,15 @@ btnRemove.addEventListener('click', () => {
     lastItem.remove;close
 })
 
+
+/* Checked symbol uppon clicking on item
+
+let list = document.querySelector('ul');
+list.addEventListener ('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+    }
+}, false) */
 
 /*In VS Code, which uses the Electron environment, 
 the prompt function is not support as it is UI blocking. 
