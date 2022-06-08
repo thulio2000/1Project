@@ -1,9 +1,9 @@
 /* To-do List */
 //Create the buttons
 
-const btnCreate = document.querySelector();
-const btnToggle = document.querySelector();
-const btnRemove = document.querySelector();
+const btnCreate = document.querySelector('.btn-main');
+const btnToggle = document.querySelector('.btn-toggle');
+const btnRemove = document.querySelector('.btn.remove');
 
 // Close button to hide/delete current item
 let close = document.getElementsByClassName("close");
