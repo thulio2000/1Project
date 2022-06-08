@@ -1,7 +1,7 @@
 /* To-do List */
 //Create the buttons
 
-const btnCreate = document.querySelector('.btn-main');
+const btnCreate = document.querySelector('#btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 const btnRemove = document.querySelector('.btn.remove');
 
