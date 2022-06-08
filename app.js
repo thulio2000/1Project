@@ -1,14 +1,9 @@
 /* To-do List */
-//Create a close button and append it to each list item
+//Create the buttons
 
-let myNodeList = document.getElementsByTagName("LI");
-for (let i = 0; i<closeBTN.length; i++) {
-    let span = document.createElement("SPAN");
-    let txt = document.createTextNode("\u00D7") // \u00D7 is multiplication sign
-    span.className = "close";
-    span.appendChild(txt);
-    myNodeList[i].appendChild(span);
-}
+const btnCreate = document.querySelector();
+const btnToggle = document.querySelector();
+const btnRemove = document.querySelector();
 
 // Close button to hide/delete current item
 let close = document.getElementsByClassName("close");
@@ -28,33 +23,40 @@ list.addEventListener ('click', function(ev) {
     }
 }, false)
 
-// create new item from Add button
+// Function to add new Task
 
-function newElement() {
-    let li = document.createElement("li");
-    let inputValue = document.getElementById("MyInput").value;
-    let t =  document.createTextNode(inputValue);
-    li.appendChild(t);
-    if (inputValue === '') {
-        alert("The item can't be empty.");
+btnCreate.addEventListener('click', () => {
+    const input = document.querySelector('.input-main');
+    const list = document.querySelector('ul');
+
+    list.insertAdjacentHTML(
+        'afterbegin',
+        `<li>${input.value}</li>`
+    );
+    input.value = '';
+})
+
+// Function to hide list
+
+btnToggle.addEventListener('click', () => {
+    const listContainer = document.querySelector('.list-container');
+
+    if (listContainer.style.display === 'none') {
+        btnToggle.textContent = 'Hide List';
+        listContainer.removeAttribute('style');
     } else {
-        document.getElementById("myUL").appendChild(li);
+        btnToggle.textContent = 'Show List';
+        listContainer.style.display = 'none';
     }
-    document.getElementById("myInput").value = "";
 
-    let span = document.createElement("SPAN");
-    let txt = document.createElement("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
+})
 
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function() {
-            let div = this.parentElement;
-            div.style.display = "none";
-        }
-    }
-}
+// Function to remove items
+
+btnRemove.addEventListener('click', () => {
+    const lastItem = document.querySelector('li:last-child');
+    lastItem.remove;close
+})
 
 
 /*In VS Code, which uses the Electron environment, 
