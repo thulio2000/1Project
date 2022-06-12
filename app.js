@@ -45,7 +45,7 @@ btnRemove.addEventListener('click', () => {
 
 toggleNight.addEventListener('change', () => {
     document.body.classList.toggle("night-mode");
-    document.querySelector('.list-container').className.toggle("night-listContainer");
+    document.querySelector('.list-container').className += "night-listContainer";
 })
 /* Checked symbol uppon clicking on item
 
