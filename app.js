@@ -37,14 +37,14 @@ btnToggle.addEventListener('click', () => {
 
 btnRemove.addEventListener('click', () => {
     const lastItem = document.querySelector('li:last-child');
-    lastItem.remove;close
+    lastItem.remove();
 })
 
 
 /* Checked symbol uppon clicking on item
 
 let list = document.querySelector('ul');
-list.addEventListener ('click', function(ev) {
+list.addEventListener ('click', () => {
     if (ev.target.tagName === 'LI') {
         ev.target.classList.toggle('checked');
     }
