@@ -27,6 +27,11 @@ body {
     background: #d5e4ef;
     margin: 0;
 }
+
+.night-mode {
+    background-color: black;
+    color: white;
+}
 .wrapper {
     width: 95%;
     display: flex;
