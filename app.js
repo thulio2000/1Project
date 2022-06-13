@@ -47,7 +47,7 @@ toggleNight.addEventListener('change', () => {
     let listContainer = document.querySelector('.list-container')
 
     document.body.classList.toggle("night-mode");
-    if (body.className === 'night-mode') {
+    if (document.body.className === 'night-mode') {
         document.querySelector('.list-container').className = "night-listContainer";
     } else {
         document.querySelector('.list-container').className = 'list-container';
