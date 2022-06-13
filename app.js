@@ -43,16 +43,31 @@ btnRemove.addEventListener('click', () => {
 
 // function to toggle night/dark mode
 
-toggleNight.addEventListener('change', () => {
-    let listContainer = document.querySelector('.list-container')
+function isLight() {
+    return localStorage.getItem("light-mode");
+}
 
-    document.body.classList.toggle("night-mode");
-    if (document.body.className === 'night-mode') {
-        document.querySelector('.list-container').className = "night-listContainer";
+function toggleRootClass() {
+    document.querySelector(":root").classList.toggle("light");
+}
+
+function toggleLocalStorageItem() {
+    if (isLight()) {
+        localStorage.removeItem("light-mode");
     } else {
-        document.querySelector('.list-container').className = 'list-container';
+        localStorage.setItem("light-mode", "set");
     }
-})
+}
+
+if (isLight()) {
+    toggleRootClass();
+}
+
+document.querySelector(".toggler").addEventListener("click", () => {
+    toggleLocalStorageItem();
+    toggleRootClass();
+});
+
 /* Checked symbol uppon clicking on item
 
 let list = document.querySelector('ul');
