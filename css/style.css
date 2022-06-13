@@ -47,7 +47,7 @@ body {
     background: #d5e4ef;
     margin: 0;
 }
-/* Night mode properties */
+/* Night mode properties 
 
 .night-mode {
     background-color: black;
@@ -58,7 +58,7 @@ body {
     padding: 0.65em 2em 2em;
 }
 
-/* Night Mode end */
+Night Mode end */
 .wrapper {
     width: 95%;
     display: flex;
