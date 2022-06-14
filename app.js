@@ -43,30 +43,10 @@ btnRemove.addEventListener('click', () => {
 
 // function to toggle night/dark mode
 
-function isLight() {
-    return localStorage.getItem("light-mode");
-}
-
-function toggleRootClass() {
-    document.querySelector(":root").classList.toggle("light");
-}
-
-function toggleLocalStorageItem() {
-    if (isLight()) {
-        localStorage.removeItem("light-mode");
-    } else {
-        localStorage.setItem("light-mode", "set");
-    }
-}
-
-if (isLight()) {
-    toggleRootClass();
-}
-
-document.querySelector(".toggler").addEventListener("click", () => {
-    toggleLocalStorageItem();
-    toggleRootClass();
-});
+toggleNight.addEventListner('click', () => {
+    let element = document.body;
+    element.classList.toggle("dark");
+})
 
 /* Checked symbol uppon clicking on item
 
