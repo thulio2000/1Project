@@ -45,7 +45,7 @@ btnRemove.addEventListener('click', () => {
 
 btnMode.addEventListener('click', () => {
     let element = document.body;
-    element.classList.toggle("dark");
+    element.classList.toggle(" dark");    
 })
 
 /* Checked symbol uppon clicking on item
