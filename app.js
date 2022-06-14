@@ -4,7 +4,7 @@
 const btnCreate = document.querySelector('#btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 const btnRemove = document.querySelector('.btn-remove');
-const bntToggleMode = document.querySelector('.toggler');
+const btnToggleMode = document.querySelector('.toggler');
 
 // Function to add new Task
 
