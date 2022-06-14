@@ -4,7 +4,7 @@
 const btnCreate = document.querySelector('#btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 const btnRemove = document.querySelector('.btn-remove');
-const btnToggleMode = document.querySelector('.toggler');
+const btnMode = document.querySelector('.toggler');
 
 // Function to add new Task
 
@@ -43,7 +43,7 @@ btnRemove.addEventListener('click', () => {
 
 // function to toggle night/dark mode
 
-btnToggleMode.addEventListner('click', () => {
+btnMode.addEventListner('click', () => {
     let element = document.body;
     element.classList.toggle("dark");
 })
