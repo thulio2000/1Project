@@ -43,7 +43,7 @@ btnRemove.addEventListener('click', () => {
 
 // function to toggle night/dark mode
 
-btnMode.addEventListner('click', () => {
+btnMode.addEventListener('click', () => {
     let element = document.body;
     element.classList.toggle("dark");
 })
